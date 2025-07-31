@@ -35,12 +35,13 @@ public class bubbleSort{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int n=in.nextInt();
-        boolean swapped=false;
+        boolean swapped;
         int[] arr=new int[n];
         for(int i=0;i<n;i++){
             arr[i]=in.nextInt();
         }
         for(int i=0;i<4;i++){
+            swapped=false;
             for(int j=0;j<4;j++){
                 if(arr[j]>arr[j+1])
                 {
